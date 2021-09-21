@@ -1,4 +1,8 @@
 #Shawn Merrigan
+#Description - we have covered basic formatting and output data
+#Numerical operators, variables, building expressions and inputting
+#Data and converting the data.
+#21 Sept 21
 #Lab 2.1.1.18
 
 print("hello Python!")
@@ -165,3 +169,26 @@ x = float(input("Enter value for x: "))
 y = float(1/((x+1/(x+1/(x+1/x)))))
 
 print("y =", y)
+
+#Lab 2.6.1.11
+#The code is working everything out in mins. The dura is in mins so mins + dura // 60.
+#Hours and mins needed to be added together then divided by // 60 but floor division
+#I then had to specify it was // 60 mins in 1 hour and answer %24 hrs.
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+mins = mins + dura % 60
+hour = hour + mins // 60 %24
+
+print(hour, ":", mins, sep="")
+
+#Lab 3.1.1.4
+#Enter an input code for any number then
+#add n greater or equals to. If below 100 it's false
+
+n = int(input("enter a number : "))
+
+print (n > 100)
+
+
