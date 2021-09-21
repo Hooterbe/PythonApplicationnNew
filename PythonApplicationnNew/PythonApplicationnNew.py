@@ -70,7 +70,7 @@ print (john , mary , adam , sep=", ")
 
 #add a variable called 'total_apples' and add total apples
 
-total_apples = (3+5+6)
+total_apples = (john + mary + adam)
 
 #print 'total_apples'
 
