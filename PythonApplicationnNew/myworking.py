@@ -146,3 +146,66 @@ else:
         print("Leap year")
     else:
         print("Leap year")
+
+# Loops
+# Store the current largest number here.
+largest_number = -999999999
+
+# Input the first value.
+number = int(input("Enter a number or type -1 to stop: "))
+
+# If the number is not equal to -1, continue.
+while number != -1:
+    # Is number larger than largest_number?
+    if number > largest_number:
+        # Yes, update largest_number.
+        largest_number = number
+    # Input the next number.
+    number = int(input("Enter a number or type -1 to stop: "))
+
+# Print the largest number.
+print("The largest number is:", largest_number)
+
+
+#Loops counting down
+counter = 5
+while counter:
+    print("Inside the loop.", counter)
+    counter -= 1
+print("Outside the loop.", counter)
+
+#Break and continue
+# break - example
+
+print("The break instruction:")
+for i in range(1, 6):
+    if i == 3:
+        break
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+
+# continue - example
+
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("Enter a number or type -1 to end program: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
+
+if counter != 0:
+    print("The largest number is", largest_number)
+else:
+    print("You haven't entered any number.")
