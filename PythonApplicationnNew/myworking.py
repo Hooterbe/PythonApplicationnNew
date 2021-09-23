@@ -209,3 +209,47 @@ if counter != 0:
     print("The largest number is", largest_number)
 else:
     print("You haven't entered any number.")
+
+########### Lists 
+#Listing numbers and changing certain parts.
+numbers = [10, 5, 7, 2, 1]
+print("Original list content:", numbers)  # Printing original list content.
+
+numbers[0] = 111
+print("\nPrevious list content:", numbers)  # Printing previous list content with the first numnber as 111.
+
+numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
+print("New list content:", numbers) 
+
+################ sorting lists and numbers
+
+my_list = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    my_list.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print("\nSorted:")
+print(my_list)
+
+############# Easy sort
+
+my_list = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    my_list.append(val)
+
+my_list.sort()
+print(my_list)
