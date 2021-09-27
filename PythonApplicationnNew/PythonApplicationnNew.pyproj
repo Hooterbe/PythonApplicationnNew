@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>69cd9b04-6976-4f9b-851c-a8a712f45d8d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mod3.py</StartupFile>
+    <StartupFile>TicTacToe.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,7 +28,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonApplicationnNew.py" />
-    <Compile Include="test.py">
+    <Compile Include="TicTacToe.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
