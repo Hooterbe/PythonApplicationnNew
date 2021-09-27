@@ -24,6 +24,9 @@
     <Compile Include="mod3.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="module4.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="myworking.py">
       <SubType>Code</SubType>
     </Compile>
